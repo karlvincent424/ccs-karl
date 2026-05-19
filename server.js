@@ -20,23 +20,23 @@ app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 
 // Serve static files (HTML, CSS, JS, images)
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Root route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // HTML Page Routes (Clean URLs)
-app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'Login.html')));
-app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'Register.html')));
-app.get('/profile', (req, res) => res.sendFile(path.join(__dirname, 'Profile.html')));
-app.get('/admin', (req, res) => res.sendFile(path.join(__dirname, 'admin.html')));
-app.get('/history', (req, res) => res.sendFile(path.join(__dirname, 'history.html')));
-app.get('/reservation', (req, res) => res.sendFile(path.join(__dirname, 'reservation.html')));
-app.get('/sessions', (req, res) => res.sendFile(path.join(__dirname, 'sessions.html')));
-app.get('/summary', (req, res) => res.sendFile(path.join(__dirname, 'summary.html')));
-app.get('/leaderboard', (req, res) => res.sendFile(path.join(__dirname, 'Leaderboard.html')));
+app.get('/login', (req, res) => res.sendFile(path.join(__dirname, 'public', 'Login.html')));
+app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'public', 'Register.html')));
+app.get('/profile', (req, res) => res.sendFile(path.join(__dirname, 'public', 'Profile.html')));
+app.get('/admin', (req, res) => res.sendFile(path.join(__dirname, 'public', 'admin.html')));
+app.get('/history', (req, res) => res.sendFile(path.join(__dirname, 'public', 'history.html')));
+app.get('/reservation', (req, res) => res.sendFile(path.join(__dirname, 'public', 'reservation.html')));
+app.get('/sessions', (req, res) => res.sendFile(path.join(__dirname, 'public', 'sessions.html')));
+app.get('/summary', (req, res) => res.sendFile(path.join(__dirname, 'public', 'summary.html')));
+app.get('/leaderboard', (req, res) => res.sendFile(path.join(__dirname, 'public', 'Leaderboard.html')));
 
 // Routes
 
