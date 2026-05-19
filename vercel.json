@@ -11,43 +11,43 @@
     },
     {
       "source": "/",
-      "destination": "/api/index.js"
+      "destination": "/index.html"
     },
     {
       "source": "/login",
-      "destination": "/api/index.js"
+      "destination": "/Login.html"
     },
     {
       "source": "/register",
-      "destination": "/api/index.js"
+      "destination": "/Register.html"
     },
     {
       "source": "/profile",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/admin",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/history",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/reservation",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/sessions",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/summary",
-      "destination": "/api/index.js"
+      "destination": "/Profile.html"
     },
     {
       "source": "/leaderboard",
-      "destination": "/api/index.js"
+      "destination": "/Leaderboard.html"
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin.html"
+    },
+    {
+      "source": "/history",
+      "destination": "/history.html"
+    },
+    {
+      "source": "/reservation",
+      "destination": "/reservation.html"
+    },
+    {
+      "source": "/sessions",
+      "destination": "/sessions.html"
+    },
+    {
+      "source": "/summary",
+      "destination": "/summary.html"
     }
   ]
 }
