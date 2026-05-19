@@ -8,6 +8,46 @@
     {
       "source": "/api/:path*",
       "destination": "/api/index.js"
+    },
+    {
+      "source": "/",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/login",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/register",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/profile",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/admin",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/history",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/reservation",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/sessions",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/summary",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/leaderboard",
+      "destination": "/api/index.js"
     }
   ]
 }
