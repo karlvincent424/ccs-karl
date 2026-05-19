@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="variables.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -16,7 +17,10 @@
     <!-- Navigation Bar -->
     <div class="nav">
       <div class="logo">
-        <p class="dashboard-text">Dashboard</p>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="color: var(--primary); flex-shrink: 0;">
+          <path d="M12 2c0 5.523-4.477 10-10 10 5.523 0 10 4.477 10 10 0-5.523 4.477-10 10-10-5.523 0-10-4.477-10-10z" />
+        </svg>
+        <p class="dashboard-text">CCS Sit-in</p>
       </div>
 
       <div class="links">
@@ -58,7 +62,7 @@
     <!-- Main Content -->
     <main class="dashboard-main">
       <div class="summary-container animate__animated animate__fadeIn">
-        <div class="section-header">
+        <div class="section-header section-header-center">
           <h2>Sit-In Summary</h2>
         </div>
         

@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (password.length === 0) {
         passwordFeedback.textContent = '';
       } else if (password.length < 6) {
-        passwordFeedback.innerHTML = '❌ Password must be at least 6 characters';
+        passwordFeedback.innerHTML = '<i class="fa-solid fa-circle-xmark" style="margin-right: 4px;"></i> Password must be at least 6 characters';
         passwordFeedback.style.color = '#dc3545';
       } else {
-        passwordFeedback.innerHTML = '✅ Password is valid';
+        passwordFeedback.innerHTML = '<i class="fa-solid fa-circle-check" style="margin-right: 4px;"></i> Password is valid';
         passwordFeedback.style.color = '#28a745';
       }
     }
@@ -56,10 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (confirmPassword.length === 0) {
         confirmPasswordFeedback.textContent = '';
       } else if (password !== confirmPassword) {
-        confirmPasswordFeedback.innerHTML = '❌ Passwords do not match';
+        confirmPasswordFeedback.innerHTML = '<i class="fa-solid fa-circle-xmark" style="margin-right: 4px;"></i> Passwords do not match';
         confirmPasswordFeedback.style.color = '#dc3545';
       } else {
-        confirmPasswordFeedback.innerHTML = '✅ Passwords match';
+        confirmPasswordFeedback.innerHTML = '<i class="fa-solid fa-circle-check" style="margin-right: 4px;"></i> Passwords match';
         confirmPasswordFeedback.style.color = '#28a745';
       }
     }
