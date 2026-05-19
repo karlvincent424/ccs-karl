@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/(server|database|package|package-lock|vercel)\\.(js|json)",
+      "destination": "/404"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.js"
+    }
+  ]
+}
